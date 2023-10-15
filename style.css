@@ -22,3 +22,20 @@
     --vdark-grbluegra: hsl(237, 17%, 21%);
     --vdark-deseratedblue: hsl(237, 23%, 32%);
 }
+
+ul ul{
+    display: none;
+    text-decoration: none;
+}
+
+nav ul li {
+	display:inline-block;
+	
+	}
+
+nav ul li:hover > ul {
+        display:inherit;
+        background-color: black;
+ }
+        
+	
