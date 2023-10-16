@@ -1,184 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
 }
-:root{
-    /*! PRİMARY COLORS */
-    --light-red: hsl(356, 100%, 66%);
-    --vlight-red: hsl(355, 100%, 74%);
-    --vdark-blue: hsl(208, 49%, 24%);
-    /*! NEUTRAL COLORS */
-    --text-white: hsl(0, 0%, 100%);
-    --grayish-blue: hsl(240, 2%, 79%);
-    --vdark-grblue: hsl(207, 13%, 34%);
-    --vdark-blackblue: hsl(240, 10%, 16%);
-    /*! GRADİENTS */
-    --verylight-red: hsl(13, 100%, 72%);
-    --light-red: hsl(353, 100%, 62%);
-    --vdark-grbluegra: hsl(237, 17%, 21%);
-    --vdark-deseratedblue: hsl(237, 23%, 32%);
-}
-
-
-.top{
-    padding: 1px;
-    height: 50vh;
-    background: url(./images/bg-pattern-intro-desktop.svg);
-    color: white;
-    font-family: "ubuntu",sans-serif;
-    background-repeat: no-repeat;
-    background-color: hsl(353, 100%, 62%);
-    background-position: center;
-    background-size: 150%;
-    border-radius: 0 0 0 100px;
-    
+:root {
+  /*! PRİMARY COLORS */
+  --light-red: hsl(356, 100%, 66%);
+  --vlight-red: hsl(355, 100%, 74%);
+  --vdark-blue: hsl(208, 49%, 24%);
+  /*! NEUTRAL COLORS */
+  --text-white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(240, 2%, 79%);
+  --vdark-grblue: hsl(207, 13%, 34%);
+  --vdark-blackblue: hsl(240, 10%, 16%);
+  /*! GRADİENTS */
+  --verylight-red: hsl(13, 100%, 72%);
+  --light-red: hsl(353, 100%, 62%);
+  --vdark-grbluegra: hsl(237, 17%, 21%);
+  --vdark-deseratedblue: hsl(237, 23%, 32%);
 }
 
-nav{
-    display: flex;
-    margin-top: 1rem;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-nav ul{
-    width: 50vw;
+body {
+  height: 400vh;
 }
 
-
-nav ul li a{
-    text-decoration: none;
-    color: var(--text-white);
-    padding: 1rem;
-    font-family: "overpass",sans-serif;
+.top {
+  padding: 1px;
+  height: 70vh;
+  background: url(./images/bg-pattern-intro-desktop.svg);
+  color: white;
+  font-family: "ubuntu", sans-serif;
+  background-repeat: no-repeat;
+  background-color: hsl(353, 100%, 62%);
+  background-position: center;
+  background-size: 150%;
+  border-radius: 0 0 0 100px;
 }
 
-
-nav ul h2{
-    display: inline;
-    margin-right: 2rem;
-    font-size: 32px;
+nav {
+  display: flex;
+  margin-top: 1rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav ul {
+  width: 50vw;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-white);
+  padding: 1rem;
+  font-family: "overpass", sans-serif;
+}
+
+nav ul h2 {
+  display: inline;
+  margin-right: 2rem;
+  font-size: 32px;
+}
 
 nav ul ul {
-    display: none;
-    text-decoration: none;
-    position: fixed;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    background-color: var(--text-white);
-    z-index: 10;
-    overflow: hidden;
-  }
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: var(--text-white);
+  z-index: 10;
+  overflow: hidden;
+}
 nav ul li {
-	display:inline;
-	}
-
-.textclass{
-    height: 10vh;
-    background-color: var(--text-white);
-    display: flex;
-    width: 5vw;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    margin-top:  10px;
+  display: inline;
 }
 
-.textclass li a{
-    color: black;
-}
-        
-#login{
-    background-color: rgba(255, 255, 255, 0);
-    color: var(--text-white);
-    border: none;
-    margin-right: 10px;
-}	
-#signup{
-    background-color: white;
-    color: var(--light-red);
-    height: 3rem;
-    width: 8rem;
-    font-family: "ubuntu",sans-serif;
-    font-weight: 600;
-    border-radius: 35px;
-    border: none;
-
-}
-#signup:hover{
-    background-color: var(--vlight-red);
-    color: var(--text-white);
-    cursor: pointer;
+.textclass {
+  height: 10vh;
+  background-color: var(--text-white);
+  display: flex;
+  width: 5vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-#login:hover{
-    cursor: pointer;
-}
-.top .container{
-   position: absolute;
-   top: 30%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   text-align: center;
+.textclass li a {
+  color: black;
 }
 
-.top .container h1{
-    font-size: 64px;
-    font-family: "overpass",sans-serif;
+#login {
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--text-white);
+  border: none;
+  margin-right: 10px;
+}
+#signup {
+  background-color: white;
+  color: var(--light-red);
+  height: 3rem;
+  width: 8rem;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 600;
+  border-radius: 35px;
+  border: none;
+}
+#signup:hover {
+  background-color: var(--vlight-red);
+  color: var(--text-white);
+  cursor: pointer;
 }
 
-.top .container p{
-    color: #ffffffab;
+#login:hover {
+  cursor: pointer;
+}
+.top .container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.top .container button{
-    margin-top: 10px;
-    margin-right: 10px;
+.top .container h1 {
+  font-size: 64px;
+  font-family: "overpass", sans-serif;
 }
 
-.top .container #startBtn{
-    background-color: white;
-    color: var(--light-red);
-    height: 3rem;
-    width: 8rem;
-    font-family: "ubuntu",sans-serif;
-    font-weight: 600;
-    border-radius: 35px;
-    border: none;
+.top .container p {
+  color: #ffffffab;
 }
 
-.top .container #startBtn:hover{
-    background-color: var(--vlight-red);
-    color: var(--text-white);
-    cursor: pointer;
+.top .container button {
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
-.top .container #learnBtn{
-    background-color: rgba(255, 255, 255, 0);
-    color: var(--text-white);
-    height: 3rem;
-    width: 8rem;
-    font-family: "ubuntu",sans-serif;
-    font-weight: 600;
-    border-radius: 35px;
-    border: 1px solid var(--text-white);
+.top .container #startBtn {
+  background-color: white;
+  color: var(--light-red);
+  height: 3rem;
+  width: 8rem;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 600;
+  border-radius: 35px;
+  border: none;
 }
-.top .container #learnBtn:hover{
-    background-color: white;
-    color: var(--light-red);
-    height: 3rem;
-    width: 8rem;
-    font-family: "ubuntu",sans-serif;
-    font-weight: 600;
-    border-radius: 35px;
-    border: none;
-    cursor: pointer;
+
+.top .container #startBtn:hover {
+  background-color: var(--vlight-red);
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+.top .container #learnBtn {
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--text-white);
+  height: 3rem;
+  width: 8rem;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 600;
+  border-radius: 35px;
+  border: 1px solid var(--text-white);
+}
+.top .container #learnBtn:hover {
+  background-color: white;
+  color: var(--light-red);
+  height: 3rem;
+  width: 8rem;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 600;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
+}
+
+.mainSide h2 {
+  text-align: center;
+  margin-top: 23vh;
+  color: var(--vdark-blue);
+  font-size: 36px;
+}
+.mainSide .leftSide {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.mainSide .leftSide h3 {
+  font-size: 24px;
+  color: var(--vdark-blue);
+  margin-bottom: 10px;
+}
+
+.mainSide .leftSide p:nth-child(2) {
+  margin-bottom: 4rem;
+}
+
+.mainSide .leftSide p {
+  color: rgba(128, 128, 128, 0.76);
 }
