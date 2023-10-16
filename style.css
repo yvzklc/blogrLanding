@@ -182,18 +182,18 @@ nav ul li {
 
 .mainSide h2 {
   text-align: center;
-  margin-top: 23vh;
+  margin-top: 10vh;
   color: var(--vdark-blue);
   font-size: 36px;
 }
 .mainSide .leftSide {
   position: absolute;
-  top: 90%;
-  left: 20%;
+  top: 130%;
+  left: 25%;
   transform: translate(-50%, -50%);
 }
 .mainSide .leftSide h3 {
-  font-size: 24px;
+  font-size: 28px;
   color: var(--vdark-blue);
   margin-bottom: 10px;
 }
@@ -204,4 +204,6 @@ nav ul li {
 
 .mainSide .leftSide p {
   color: rgba(128, 128, 128, 0.76);
+  font-size: 18px;
+  line-height: 35px;
 }
