@@ -26,18 +26,28 @@
 
 .top{
     padding: 1px;
-    height: 25vh;
-    background-color: var(--verylight-red);
-    color: var(--text-white);
-    font-family: 'Overpass', sans-serif;
+    height: 50vh;
+    background: url(./images/bg-pattern-intro-desktop.svg);
+    color: white;
+    font-family: "ubuntu",sans-serif;
+    background-repeat: no-repeat;
+    background-color: hsl(353, 100%, 62%);
+    background-position: center;
+    background-size: 150%;
+    border-radius: 0 0 0 100px;
+    
 }
 
 nav{
     display: flex;
-    justify-content: space-evenly;
     margin-top: 1rem;
-    align-items: baseline;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
 
+}
+nav ul{
+    width: 50vw;
 }
 
 
@@ -45,6 +55,7 @@ nav ul li a{
     text-decoration: none;
     color: var(--text-white);
     padding: 1rem;
+    font-family: "overpass",sans-serif;
 }
 
 
@@ -55,16 +66,119 @@ nav ul h2{
 }
 
 
-
-ul ul{
+nav ul ul {
     display: none;
     text-decoration: none;
-}
-
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: var(--text-white);
+    z-index: 10;
+    overflow: hidden;
+  }
 nav ul li {
-	display:inline-block;
+	display:inline;
 	}
 
+.textclass{
+    height: 10vh;
+    background-color: var(--text-white);
+    display: flex;
+    width: 5vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top:  10px;
+}
 
+.textclass li a{
+    color: black;
+}
         
-	
+#login{
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--text-white);
+    border: none;
+    margin-right: 10px;
+}	
+#signup{
+    background-color: white;
+    color: var(--light-red);
+    height: 3rem;
+    width: 8rem;
+    font-family: "ubuntu",sans-serif;
+    font-weight: 600;
+    border-radius: 35px;
+    border: none;
+
+}
+#signup:hover{
+    background-color: var(--vlight-red);
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+#login:hover{
+    cursor: pointer;
+}
+.top .container{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+
+.top .container h1{
+    font-size: 64px;
+    font-family: "overpass",sans-serif;
+}
+
+.top .container p{
+    color: #ffffffab;
+}
+
+.top .container button{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.top .container #startBtn{
+    background-color: white;
+    color: var(--light-red);
+    height: 3rem;
+    width: 8rem;
+    font-family: "ubuntu",sans-serif;
+    font-weight: 600;
+    border-radius: 35px;
+    border: none;
+}
+
+.top .container #startBtn:hover{
+    background-color: var(--vlight-red);
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+.top .container #learnBtn{
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--text-white);
+    height: 3rem;
+    width: 8rem;
+    font-family: "ubuntu",sans-serif;
+    font-weight: 600;
+    border-radius: 35px;
+    border: 1px solid var(--text-white);
+}
+.top .container #learnBtn:hover{
+    background-color: white;
+    color: var(--light-red);
+    height: 3rem;
+    width: 8rem;
+    font-family: "ubuntu",sans-serif;
+    font-weight: 600;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+}
