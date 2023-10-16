@@ -207,3 +207,10 @@ nav ul li {
   font-size: 18px;
   line-height: 35px;
 }
+
+.mainSide .rightSide .desktop {
+   position: absolute;
+   top: 130%;
+   right: -25%;
+   transform: translate(-50%, -50%);
+}
