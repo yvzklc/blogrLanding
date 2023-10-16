@@ -1,9 +1,10 @@
 function drop1() {
     var x = document.querySelector(".drop")
-    x.style.display = "block";
+    x.style.display = "flex";
+    x.style.flexDirection = "column";
   }
   
-  function drop2() {
+  function drop6() {
       var x = document.querySelector(".drop")
       x.style.display = "none";
   }
