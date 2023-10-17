@@ -247,7 +247,47 @@ nav ul li {
 }
 
 .info .infoRight p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7rem;
   color: rgba(255, 255, 255, 0.856);
+}
+
+/* .info1{
+  position: absolute;
+  top: 220%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.info1Left{
+  position: absolute;
+  top: 300%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.info1Right{
+  position: absolute;
+  top: 300%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.info1Right h2{
+  font-size: 36px;
+  color: var(--vdark-deseratedblue);
+  margin-bottom: 20px;
+}
+
+
+.info1Right p {
+  font-size: 18px;
+  line-height: 1.7rem;
+  color: var(--vdark-grblue);
+}
+
+.info1Right p:nth-child(2){
+  margin-bottom: 100px;
 }
