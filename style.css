@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: "overpass", sans-serif;
 }
 :root {
   /*! PRİMARY COLORS */
@@ -273,3 +274,71 @@ color: var(--vdark-blue);
   color: var(--vdark-deseratedblue);
 }
 
+.footerInfo{
+  background-color: var(--vdark-blackblue);
+  height: 32vh;
+}
+
+.footerInfo .footerLinks{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 7vh 0 0 0;
+}
+.footerInfo h2 {
+  color: var(--text-white);
+  font-size: 32px;
+}
+
+.footerInfo p {
+  color: var(--text-white);
+  font-size: 18px;
+  font-family: "ubuntu",sans-serif;
+}
+
+
+.footerInfo .footerLinks .links{
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  
+}
+
+
+.footerInfo .footerLinks .links .link1{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.footerInfo .footerLinks .links .link2{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.footerInfo .footerLinks .links .link3{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.footerInfo .footerLinks .links .link1 a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.712);
+}
+.footerInfo .footerLinks .links .link1 a:hover{
+  text-decoration: underline;
+}
+.footerInfo .footerLinks .links .link2 a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.712);
+}
+.footerInfo .footerLinks .links .link2 a:hover{
+  text-decoration: underline;
+}
+.footerInfo .footerLinks .links .link3 a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.712);
+}
+
+.footerInfo .footerLinks .links .link3 a:hover{
+  text-decoration: underline;
+}
