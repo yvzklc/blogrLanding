@@ -332,6 +332,7 @@ section h2 {
 @media all and (max-width: 480px) {
   .mainSide {
     flex-direction: column-reverse;
+    text-align: center;
   }
   section h2{
     font-size: 28px;
@@ -345,5 +346,58 @@ section h2 {
   }
   .mainSide .rightSide  img{
     width: 100vw;
+  }
+  .info{
+    flex-direction: column;
+    height: 100%;
+    margin: 20vh 0 0 0;
+    background-image: url(./images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    background-color: var(--vdark-deseratedblue);
+    text-align: center;
+  }
+  .info .infoLeft img{
+    width: 100vw;
+    margin: -10vh 0 0 0;
+  }
+  .info1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .info1 .info1Right   {
+    display: flex;
+    align-items: center;
+  }
+
+  .info1 .info1Right  h2 {
+    font-size: 28px;
+  }
+  .info1 .info1Right  p {
+    font-size: 16px;
+  }
+  .info1 .info1Left  img{
+    width: 100vw;
+  }
+  .footerInfo{
+    height: 100%;
+    border-radius: 0 100px 0 0;
+  }
+  .footerInfo .footerLinks h2{
+    margin: 0 0 8vh 0;
+  }
+  .footerInfo .footerLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerInfo .footerLinks .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
   }
 }
