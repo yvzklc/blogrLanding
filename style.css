@@ -24,7 +24,6 @@
   --vdark-deseratedblue: hsl(237, 23%, 32%);
 }
 
-
 .top {
   padding: 1px;
   height: 70vh;
@@ -185,31 +184,28 @@ section h2 {
   font-size: 36px;
 }
 
-.mainSide{
+.mainSide {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.mainSide .leftSide h3{
-font-size: 28px;
-line-height: 5rem;
-color: var(--vdark-blue);
+.mainSide .leftSide h3 {
+  font-size: 28px;
+  line-height: 5rem;
+  color: var(--vdark-blue);
 }
 
-.mainSide .leftSide p:nth-child(2){
+.mainSide .leftSide p:nth-child(2) {
   margin-bottom: 3rem;
 }
-.mainSide .leftSide p{
+.mainSide .leftSide p {
   font-size: 18px;
   line-height: 24px;
   color: var(--vdark-blue);
 }
 
-
-
-
-.info{
+.info {
   background-image: url(./images/bg-pattern-circles.svg);
   background-repeat: no-repeat;
   background-position: left;
@@ -223,16 +219,14 @@ color: var(--vdark-blue);
   justify-content: space-evenly;
 }
 
-
-
-.info .infoRight{
-   display: flex;
-   align-items: start;
-   justify-content: center;
-   flex-direction: column;
-   margin: 0 12vw 12vh 0;
+.info .infoRight {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 12vw 12vh 0;
 }
-.info .infoRight h2{
+.info .infoRight h2 {
   font-size: 46px;
   color: var(--text-white);
   margin-bottom: 20px;
@@ -242,31 +236,26 @@ color: var(--vdark-blue);
   font-size: 20px;
   line-height: 1.7rem;
   color: rgba(255, 255, 255, 0.685);
-} 
+}
 
-
-
-.info1{
+.info1 {
   display: flex;
   align-items: center;
   justify-content: start;
   margin: 10vh 0 0 0;
-} 
+}
 
-
-
-.info1Right{
+.info1Right {
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
 }
-.info1Right h2{
+.info1Right h2 {
   font-size: 36px;
   color: var(--vdark-deseratedblue);
   margin-bottom: 20px;
 }
-
 
 .info1Right p {
   font-size: 18px;
@@ -274,12 +263,12 @@ color: var(--vdark-blue);
   color: var(--vdark-deseratedblue);
 }
 
-.footerInfo{
+.footerInfo {
   background-color: var(--vdark-blackblue);
   height: 32vh;
 }
 
-.footerInfo .footerLinks{
+.footerInfo .footerLinks {
   display: flex;
   justify-content: space-evenly;
   padding: 7vh 0 0 0;
@@ -292,53 +281,69 @@ color: var(--vdark-blue);
 .footerInfo p {
   color: var(--text-white);
   font-size: 18px;
-  font-family: "ubuntu",sans-serif;
+  font-family: "ubuntu", sans-serif;
 }
 
-
-.footerInfo .footerLinks .links{
+.footerInfo .footerLinks .links {
   display: flex;
   justify-content: space-between;
   gap: 10rem;
-  
 }
 
-
-.footerInfo .footerLinks .links .link1{
+.footerInfo .footerLinks .links .link1 {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
-.footerInfo .footerLinks .links .link2{
+.footerInfo .footerLinks .links .link2 {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
-.footerInfo .footerLinks .links .link3{
+.footerInfo .footerLinks .links .link3 {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
 
-.footerInfo .footerLinks .links .link1 a{
+.footerInfo .footerLinks .links .link1 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.712);
 }
-.footerInfo .footerLinks .links .link1 a:hover{
+.footerInfo .footerLinks .links .link1 a:hover {
   text-decoration: underline;
 }
-.footerInfo .footerLinks .links .link2 a{
+.footerInfo .footerLinks .links .link2 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.712);
 }
-.footerInfo .footerLinks .links .link2 a:hover{
+.footerInfo .footerLinks .links .link2 a:hover {
   text-decoration: underline;
 }
-.footerInfo .footerLinks .links .link3 a{
+.footerInfo .footerLinks .links .link3 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.712);
 }
 
-.footerInfo .footerLinks .links .link3 a:hover{
+.footerInfo .footerLinks .links .link3 a:hover {
   text-decoration: underline;
+}
+
+@media all and (max-width: 480px) {
+  .mainSide {
+    flex-direction: column-reverse;
+  }
+  section h2{
+    font-size: 28px;
+    margin: 10vh 0 3vh 0;
+  }
+  .mainSide .leftSide h3 {
+    font-size: 24px;
+  }
+  .mainSide .leftSide p {
+    font-size: 16px;
+  }
+  .mainSide .rightSide  img{
+    width: 100vw;
+  }
 }
