@@ -3,7 +3,7 @@ function drop1() {
     x.setAttribute('class', 'textclass');
     x.style.display = "flex";
     x.style.flexDirection = "column";
-    x.style.marginLeft = "23.7rem"
+    x.style.marginLeft = "26.5rem"
     x.style.flexWrap = "wrap"
   
 
@@ -18,7 +18,7 @@ function drop3() {
     x.setAttribute('class', 'textclass');
     x.style.display = "flex";
     x.style.flexDirection = "column";
-    x.style.marginLeft = "30.7rem"
+    x.style.marginLeft = "33.3rem"
     x.style.flexWrap = "wrap"
   }
   
@@ -31,7 +31,7 @@ function drop5() {
     x.setAttribute('class', 'textclass');
     x.style.display = "flex";
     x.style.flexDirection = "column";
-    x.style.marginLeft = "37.7rem"
+    x.style.marginLeft = "40rem"
     x.style.flexWrap = "wrap"
   }
   
