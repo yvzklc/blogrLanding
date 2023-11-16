@@ -23,14 +23,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](.images/projectImg.png)
-![](.images/tablet.png)
-![](.images/mobile.png)
+![](./images/projectImg.png)
+![](./images/tablet.png)
+![](./images/mobile.png)
 
 
 ### Links
 
-- Live Site URL: [live site URL here](https://yvzklc.github.io/blogrLanding/)
+- Live Site URL: [https://yvzklc.github.io/blogrLanding/](https://yvzklc.github.io/blogrLanding/)
 
 
 
